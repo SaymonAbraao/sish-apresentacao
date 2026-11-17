@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-50 0 500 500">
+  <!-- Vetorização fiel do símbolo: grade 4×5, passo 100. Azul 74/100, prata 80/100 (medido em logo.jpeg). -->
+  <defs>
+    <radialGradient id="sish-prata" cx="50%" cy="45%" r="62%">
+      <stop offset="0" stop-color="#F4F5F6"/>
+      <stop offset=".45" stop-color="#E0E1E3"/>
+      <stop offset="1" stop-color="#A9AAAD"/>
+    </radialGradient>
+  </defs>
+  <g fill="#0078C0">
+    <rect x="213" y="13" width="74" height="74"/>
+    <rect x="113" y="113" width="74" height="74"/>
+    <rect x="213" y="113" width="74" height="74"/>
+    <rect x="313" y="113" width="74" height="74"/>
+    <rect x="213" y="213" width="74" height="74"/>
+  </g>
+  <g fill="url(#sish-prata)">
+    <rect x="110" y="210" width="80" height="80" rx="13"/>
+    <rect x="10" y="310" width="80" height="80" rx="13"/>
+    <rect x="210" y="310" width="80" height="80" rx="13"/>
+    <rect x="110" y="410" width="80" height="80" rx="13"/>
+  </g>
+</svg>

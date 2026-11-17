@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#071826">
+    <title>SIS-H - Fale Conosco</title>
+
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="preload" href="assets/sish/fonts/fraunces-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/sish/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/sish/css/tokens.css?v=1">
+    <link rel="stylesheet" href="assets/sish/css/site.css?v=1">
+
+    <link rel="icon" href="assets/sish/icons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/sish/icons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/sish/icons/apple-touch-icon-180.png">
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- HEADER -->
+    <header class="site-header" id="header">
+        <div class="site-header__bar">
+            <a class="brand" href="index.html">
+                <img class="brand__logo" src="assets/sish/img/logo-sish-240.webp" srcset="assets/sish/img/logo-sish-240.webp 240w, assets/sish/img/logo-sish-480.webp 480w" sizes="122px" width="240" height="122" alt="SIS-H Logo">
+                <img class="brand__symbol" src="assets/sish/icons/favicon.svg" width="32" height="32" alt="SIS-H Logo">
+            </a>
+            <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="sr-only">Navegação</span>
+                <svg class="icon icon-open" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-menu"/></svg>
+                <svg class="icon icon-close" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-close"/></svg>
+            </button>
+            <nav class="nav" id="site-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="modulos.html">Módulos</a></li>
+                    <li><a href="contato.html" aria-current="page">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="page-hero on-dark" aria-labelledby="page-title">
+            <img class="page-hero__cross" src="assets/sish/icons/cruz-sish.svg" width="400" height="500" alt="">
+            <div class="container">
+                <h1 class="page-hero__title display" id="page-title">Fale Conosco</h1>
+            </div>
+        </section>
+
+        <section class="contact-page" aria-labelledby="canais-title">
+            <div class="container contact-page__inner" data-reveal-stagger>
+                <div class="contact-page__channels">
+                    <h2 class="display" id="canais-title">Canais de Atendimento</h2>
+                    <p>Entre em contato com nossa equipe comercial ou tire suas dúvidas sobre suporte e implantação:</p>
+                    <ul class="contacts">
+                        <li><a class="contact" href="tel:+553432613762"><span class="contact__icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-phone"/></svg></span><span class="contact__text"><strong>Telefone:</strong> <span class="contact__value">(34) 3261-3762</span></span></a></li>
+                        <li><a class="contact" href="https://api.whatsapp.com/send?phone=5534999651455&amp;text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20SIS-H." target="_blank" rel="noopener"><span class="contact__icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-whatsapp"/></svg></span><span class="contact__text"><strong>WhatsApp:</strong> <span class="contact__value">(34) 9 9965-1455</span></span></a></li>
+                        <li><a class="contact" href="mailto:sish@sish.com.br"><span class="contact__icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-mail"/></svg></span><span class="contact__text"><strong>E-mail:</strong> <span class="contact__value">sish@sish.com.br</span></span></a></li>
+                        <li><div class="contact contact--static"><span class="contact__icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-clock"/></svg></span><span class="contact__text"><strong>Atendimento:</strong> <span class="contact__value">Seg. a Sex. das 08h às 18h</span></span></div></li>
+                        <li><div class="contact contact--static"><span class="contact__icon" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-pin"/></svg></span><span class="contact__text"><span class="contact__value">Avenida 17, nº 1640, Centro – Ituiutaba/MG</span></span></div></li>
+                    </ul>
+                </div>
+                <div class="form-card">
+                    <h3>Envie uma Mensagem</h3>
+                    <!-- Envio: abre o WhatsApp com os dados no texto (nada vai para outro servidor).
+                         Com JS (site.js), monta Nome/Telefone/E-mail/Mensagem; sem JS, o navegador envia só a mensagem ao WhatsApp. -->
+                    <form class="contact-form" action="https://api.whatsapp.com/send" method="get" target="_blank" rel="noopener" data-whatsapp-form>
+                        <input type="hidden" name="phone" value="5534999651455">
+                        <div class="field">
+                            <label for="campo-nome">Nome</label>
+                            <input type="text" id="campo-nome" autocomplete="name" required placeholder="Seu nome completo">
+                        </div>
+                        <div class="field">
+                            <label for="campo-telefone">Telefone</label>
+                            <input type="tel" id="campo-telefone" autocomplete="tel" inputmode="tel" placeholder="(00) 00000-0000">
+                        </div>
+                        <div class="field">
+                            <label for="campo-email">E-mail</label>
+                            <input type="email" id="campo-email" autocomplete="email" placeholder="seu@email.com">
+                        </div>
+                        <div class="field">
+                            <label for="campo-mensagem">Mensagem</label>
+                            <textarea id="campo-mensagem" name="text" rows="4" required placeholder="Como podemos ajudar seu hospital?"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn--primary">Enviar Mensagem</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- CENA 9 · RODAPÉ -->
+    <footer class="site-footer" id="footer">
+        <div class="container site-footer__inner">
+            <div class="site-footer__company">
+                <a class="brand" href="index.html"><img class="brand__logo" src="assets/sish/img/logo-sish-240.webp" srcset="assets/sish/img/logo-sish-240.webp 240w, assets/sish/img/logo-sish-480.webp 480w" sizes="122px" width="240" height="122" alt="SIS-H Logo" loading="lazy"></a>
+                <p class="site-footer__legal">SISH – Soluções Integradas em Software Hospitalar LTDA<br>CNPJ 13.432.652/0001-47</p>
+            </div>
+            <address class="site-footer__contact">
+                <ul>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-pin"/></svg><span>Avenida 17, nº 1640, Centro – Ituiutaba/MG</span></li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-phone"/></svg><span>Fone <a href="tel:+553432613762">(34) 3261-3762</a></span></li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-whatsapp"/></svg><span>WhatsApp <a href="https://api.whatsapp.com/send?phone=5534999651455&amp;text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20SIS-H." target="_blank" rel="noopener">(34) 9 9965-1455</a></span></li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-mail"/></svg><a href="mailto:sish@sish.com.br">sish@sish.com.br</a></li>
+                </ul>
+            </address>
+            <nav class="site-footer__nav" aria-label="Rodapé">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="modulos.html">Módulos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="site-footer__bottom">
+                <p>&copy; 2026 SIS-H. Todos os direitos reservados.</p>
+                <ul class="social" aria-label="Redes sociais">
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-facebook"/></svg><span class="sr-only">Facebook</span></li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-instagram"/></svg><span class="sr-only">Instagram</span></li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-youtube"/></svg><span class="sr-only">YouTube</span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
+    <a class="wa-float" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=5534999651455&amp;text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20SIS-H.">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-whatsapp"/></svg>
+        <span class="sr-only">Atendimento via WhatsApp</span>
+    </a>
+
+    <script src="assets/sish/js/site.js?v=1" defer></script>
+</body>
+</html>

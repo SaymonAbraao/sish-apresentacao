@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta name="robots" content="noindex, nofollow">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#071826">
+    <title>SIS-H - Módulos e Soluções</title>
+
+    <script>document.documentElement.classList.add('js');</script>
+    <link rel="preload" href="assets/sish/fonts/fraunces-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="assets/sish/fonts/inter-var-latin.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="assets/sish/css/tokens.css?v=1">
+    <link rel="stylesheet" href="assets/sish/css/site.css?v=1">
+
+    <link rel="icon" href="assets/sish/icons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="assets/sish/icons/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="apple-touch-icon" href="assets/sish/icons/apple-touch-icon-180.png">
+</head>
+
+<body>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+    <!-- HEADER -->
+    <header class="site-header" id="header">
+        <div class="site-header__bar">
+            <a class="brand" href="index.html">
+                <img class="brand__logo" src="assets/sish/img/logo-sish-240.webp" srcset="assets/sish/img/logo-sish-240.webp 240w, assets/sish/img/logo-sish-480.webp 480w" sizes="122px" width="240" height="122" alt="SIS-H Logo">
+                <img class="brand__symbol" src="assets/sish/icons/favicon.svg" width="32" height="32" alt="SIS-H Logo">
+            </a>
+            <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-nav">
+                <span class="sr-only">Navegação</span>
+                <svg class="icon icon-open" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-menu"/></svg>
+                <svg class="icon icon-close" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-close"/></svg>
+            </button>
+            <nav class="nav" id="site-nav" aria-label="Principal">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="modulos.html" aria-current="page">Módulos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="conteudo">
+        <section class="page-hero on-dark" aria-labelledby="page-title">
+            <img class="page-hero__cross" src="assets/sish/icons/cruz-sish.svg" width="400" height="500" alt="">
+            <div class="container">
+                <h1 class="page-hero__title display" id="page-title">Módulos do Sistema</h1>
+            </div>
+        </section>
+
+        <nav class="catnav" aria-label="Categorias de módulos">
+            <div class="container">
+                <ul>
+                    <li><a href="#lista" data-cat="todos" aria-current="true">Todos</a></li>
+                    <li><a href="#cat-a" data-cat="a">Atendimento e Clínico</a></li>
+                    <li><a href="#cat-b" data-cat="b">Faturamento e Financeiro</a></li>
+                    <li><a href="#cat-c" data-cat="c">Suprimentos</a></li>
+                    <li><a href="#cat-d" data-cat="d">Gestão</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div id="lista">
+        <section class="mcat" id="cat-a" data-cat="a" aria-labelledby="cat-a-title">
+            <div class="container">
+                <div class="mcat__head" data-reveal>
+                    <span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-pulse"/></svg></span>
+                    <h2 class="mcat__title display" id="cat-a-title">Atendimento e Clínico</h2>
+                </div>
+                <div class="mcat__list">
+                    <article class="module" data-reveal id="atendimento" aria-labelledby="m-atendimento">
+                        <!-- module-shot: espaço pronto para o print do módulo (hoje, ilustração da marca). Para usar um print, coloque <img src="..." alt="..."> aqui dentro no lugar do glifo. -->
+                        <figure class="module-shot"><span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-pulse"/></svg></span></figure>
+                        <div class="module__body">
+                            <h3 class="module__name" id="m-atendimento">Atendimento e Recepção</h3>
+                            <p class="module__phrase">Da recepção à alta, tudo sobre o paciente em uma tela.</p>
+                            <div class="module__detail">
+                                <h4 class="module__detail-title">O que tem dentro</h4>
+                                <div class="module__groups">
+                                <div class="group"><p class="group__name">Recepção e cadastro</p><ul><li>Cadastro de pacientes</li><li>Controle de pacientes internos e externos</li><li>Controle de visitantes com foto</li><li>Controle de viagens</li></ul></div>
+                                <div class="group"><p class="group__name">Fila e risco</p><ul><li>Painel de chamada em tempo real</li><li>Classificação de risco (Manchester)</li></ul></div>
+                                <div class="group"><p class="group__name">Agendamentos</p><ul><li>Consultas, exames e cirurgias</li></ul></div>
+                                <div class="group"><p class="group__name">Documentos e guias</p><ul><li>Impressão de FIH, FAA e guias TISS automáticas (cabeçalho preenchido pelo sistema)</li></ul></div>
+                                <div class="group"><p class="group__name">Internação e contas</p><ul><li>Orçamentos de materiais e medicamentos</li><li>Censo hospitalar</li><li>Fechamento de contas</li></ul></div>
+                                <div class="group"><p class="group__name">Relatórios</p><ul><li>Estatísticos e gerenciais</li></ul></div>
+                                <div class="group"><p class="group__name">Prontuário eletrônico integrado</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="module" data-reveal id="prontuario" aria-labelledby="m-prontuario">
+                        <!-- module-shot: espaço pronto para o print do módulo (hoje, ilustração da marca). Para usar um print, coloque <img src="..." alt="..."> aqui dentro no lugar do glifo. -->
+                        <figure class="module-shot"><span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-pulse"/></svg></span></figure>
+                        <div class="module__body">
+                            <h3 class="module__name" id="m-prontuario">Prontuário Eletrônico do Paciente (PEP)</h3>
+                            <p class="module__phrase">Prontuário completo, sem papel, com o histórico do paciente à mão.</p>
+                            <div class="module__detail">
+                                <h4 class="module__detail-title">O que tem dentro</h4>
+                                <div class="module__groups">
+                                <div class="group"><p class="group__name">Entrada</p><ul><li>Triagem eletrônica</li></ul></div>
+                                <div class="group"><p class="group__name">Prescrição e medicação</p><ul><li>Prescrição médica hospitalar e neonatal (recém-nascido)</li><li>Checagem eletrônica de materiais e medicamentos</li><li>Emissão de receituários e atestados</li></ul></div>
+                                <div class="group"><p class="group__name">Registro clínico</p><ul><li>Evolução clínica médica e multiprofissional</li><li>Anotações e checagem eletrônica de enfermagem</li><li>Acompanhamento e gráfico de sinais vitais</li></ul></div>
+                                <div class="group"><p class="group__name">Exames e laudos</p><ul><li>Solicitação e laudos de exames</li><li>Preenchimento automático de laudo de AIH</li></ul></div>
+                                <div class="group"><p class="group__name">Continuidade do cuidado</p><ul><li>Histórico completo de atendimentos anteriores, de forma rápida</li></ul></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="module" data-reveal id="paineis" aria-labelledby="m-paineis">
+                        <!-- module-shot: espaço pronto para o print do módulo (hoje, ilustração da marca). Para usar um print, coloque <img src="..." alt="..."> aqui dentro no lugar do glifo. -->
+                        <figure class="module-shot"><span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-pulse"/></svg></span></figure>
+                        <div class="module__body">
+                            <h3 class="module__name" id="m-paineis">Painéis de Chamada e de Triagem</h3>
+                            
+                            <div class="module__detail">
+                                <h4 class="module__detail-title">O que tem dentro</h4>
+                                <div class="module__groups">
+                                <div class="group"><p class="group__name">Painel de Chamada</p><p>Chamada de pacientes em tempo real, com escrita na tela e áudio.</p></div>
+                                <div class="group"><p class="group__name">Painel de Triagem</p></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="module" data-reveal id="laboratorio" aria-labelledby="m-laboratorio">
+                        <!-- module-shot: espaço pronto para o print do módulo (hoje, ilustração da marca). Para usar um print, coloque <img src="..." alt="..."> aqui dentro no lugar do glifo. -->
+                        <figure class="module-shot"><span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-pulse"/></svg></span></figure>
+                        <div class="module__body">
+                            <h3 class="module__name" id="m-laboratorio">Laboratório de Análise Clínica e Raio-X</h3>
+                            
+                            <div class="module__detail">
+                                <h4 class="module__detail-title">O que tem dentro</h4>
+                                <div class="module__groups">
+                                <div class="group"><ul><li>Emissão de laudos personalizados</li><li>Formulário de bancada</li><li>Fórmulas padronizadas</li><li>Resultados online</li></ul></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="mcat__compact" data-reveal-stagger>
+                    <article class="module module--compact" id="arquivo-medico" aria-labelledby="m-arquivo-medico">
+                        <h3 class="module__name" id="m-arquivo-medico">Arquivo Médico</h3>
+                        <p>Fale com a gente e veja este módulo em uma apresentação online.</p>
+                        <a class="btn btn--outline" href="https://api.whatsapp.com/send?phone=5534999651455&amp;text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20SIS-H." target="_blank" rel="noopener">Agendar apresentação online</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="mcat" id="cat-b" data-cat="b" aria-labelledby="cat-b-title">
+            <div class="container">
+                <div class="mcat__head" data-reveal>
+                    <span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-receipt"/></svg></span>
+                    <h2 class="mcat__title display" id="cat-b-title">Faturamento e Financeiro</h2>
+                </div>
+                <div class="mcat__list">
+                    <article class="module" data-reveal id="faturamento" aria-labelledby="m-faturamento">
+                        <!-- module-shot: espaço pronto para o print do módulo (hoje, ilustração da marca). Para usar um print, coloque <img src="..." alt="..."> aqui dentro no lugar do glifo. -->
+                        <figure class="module-shot"><span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-receipt"/></svg></span></figure>
+                        <div class="module__body">
+                            <h3 class="module__name" id="m-faturamento">Faturamento TISS/TUSS (Particular e Convênios)</h3>
+                            <p class="module__phrase">Contas fechadas, guias geradas e glosas sob controle.</p>
+                            <div class="module__detail">
+                                <h4 class="module__detail-title">O que tem dentro</h4>
+                                <div class="module__groups">
+                                <div class="group"><ul><li>Gestão de convênios, tabelas e diárias/taxas</li><li>Exportação de arquivos XML no padrão TISS (ANS)</li><li>Fechamento parcial e total de contas</li><li>Importação automática de itens da farmácia</li><li>Gestão e recurso de glosas</li><li>Integração direta com contas a receber</li><li>Previsão de faturamento hospitalar e médico</li></ul></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="module" data-reveal id="faturamento-sus" aria-labelledby="m-faturamento-sus">
+                        <!-- module-shot: espaço pronto para o print do módulo (hoje, ilustração da marca). Para usar um print, coloque <img src="..." alt="..."> aqui dentro no lugar do glifo. -->
+                        <figure class="module-shot"><span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-receipt"/></svg></span></figure>
+                        <div class="module__body">
+                            <h3 class="module__name" id="m-faturamento-sus">Faturamento SUS (AIH, BPA, CIHA, APAC)</h3>
+                            
+                            <div class="module__detail">
+                                <h4 class="module__detail-title">O que tem dentro</h4>
+                                <div class="module__groups">
+                                <div class="group"><ul><li>Suporte a AIH, BPA, CIHA e APAC</li><li>Preenchimento automático de laudo de AIH (via prontuário)</li></ul></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="module" data-reveal id="financeiro" aria-labelledby="m-financeiro">
+                        <!-- module-shot: espaço pronto para o print do módulo (hoje, ilustração da marca). Para usar um print, coloque <img src="..." alt="..."> aqui dentro no lugar do glifo. -->
+                        <figure class="module-shot"><span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-receipt"/></svg></span></figure>
+                        <div class="module__body">
+                            <h3 class="module__name" id="m-financeiro">Gestão Financeira e Fluxo de Caixa</h3>
+                            
+                            <div class="module__detail">
+                                <h4 class="module__detail-title">O que tem dentro</h4>
+                                <div class="module__groups">
+                                <div class="group"><ul><li>Contas a pagar e a receber</li><li>Gestão de caixa, bancos e conciliação bancária</li><li>Controle de cheques, cartões de crédito e débito</li><li>Emissão de boletos com envio de arquivo de remessa/retorno</li><li>Gestão de contribuintes (carnê de doações)</li><li>Relatórios gerenciais para contabilidade</li></ul></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="mcat" id="cat-c" data-cat="c" aria-labelledby="cat-c-title">
+            <div class="container">
+                <div class="mcat__head" data-reveal>
+                    <span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-box"/></svg></span>
+                    <h2 class="mcat__title display" id="cat-c-title">Suprimentos</h2>
+                </div>
+                <div class="mcat__list">
+                    <article class="module" data-reveal id="estoque" aria-labelledby="m-estoque">
+                        <!-- module-shot: espaço pronto para o print do módulo (hoje, ilustração da marca). Para usar um print, coloque <img src="..." alt="..."> aqui dentro no lugar do glifo. -->
+                        <figure class="module-shot"><span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-box"/></svg></span></figure>
+                        <div class="module__body">
+                            <h3 class="module__name" id="m-estoque">Estoque, Farmácia e Sub-estoques</h3>
+                            <p class="module__phrase">Controle de medicamentos e materiais com rastreio até o lote.</p>
+                            <div class="module__detail">
+                                <h4 class="module__detail-title">O que tem dentro</h4>
+                                <div class="module__groups">
+                                <div class="group"><p class="group__name">Cadastros</p><ul><li>Medicamentos e insumos com códigos TISS/TUSS</li><li>Fornecedores, laboratórios e outros</li></ul></div>
+                                <div class="group"><p class="group__name">Movimentação</p><ul><li>Dispensação ágil por código de barras e por pacotes</li><li>Saída para pacientes e setores</li><li>Importação de requisições de materiais e medicamentos</li></ul></div>
+                                <div class="group"><p class="group__name">Rastreabilidade e conformidade</p><ul><li>Rastreabilidade completa por lote e validade</li><li>Controle de psicotrópicos e livro ANVISA</li><li>Inventário</li></ul></div>
+                                <div class="group"><p class="group__name">Planejamento</p><ul><li>Estoque central e sub-estoques</li><li>Estoque mínimo e máximo</li><li>Integração com cotações e compras</li><li>Atualização por tabelas de referência (Brasíndice)</li><li>Relatórios gerenciais</li></ul></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="module" data-reveal id="requisicoes" aria-labelledby="m-requisicoes">
+                        <!-- module-shot: espaço pronto para o print do módulo (hoje, ilustração da marca). Para usar um print, coloque <img src="..." alt="..."> aqui dentro no lugar do glifo. -->
+                        <figure class="module-shot"><span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-box"/></svg></span></figure>
+                        <div class="module__body">
+                            <h3 class="module__name" id="m-requisicoes">Requisições Internas</h3>
+                            <p class="module__phrase">Menos papel e formulário, mais controle sobre cada pedido.</p>
+                            <div class="module__detail">
+                                <h4 class="module__detail-title">O que tem dentro</h4>
+                                <div class="module__groups">
+                                <div class="group"><ul><li>Processo 100% digital, sem formulários impressos</li><li>Lançamento direto na conta do paciente, setor, médicos ou funcionários</li><li>Acompanhamento e relatórios em tempo real de solicitações pendentes e atendidas</li></ul></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="module" data-reveal id="cotacao" aria-labelledby="m-cotacao">
+                        <!-- module-shot: espaço pronto para o print do módulo (hoje, ilustração da marca). Para usar um print, coloque <img src="..." alt="..."> aqui dentro no lugar do glifo. -->
+                        <figure class="module-shot"><span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-box"/></svg></span></figure>
+                        <div class="module__body">
+                            <h3 class="module__name" id="m-cotacao">Cotação e Compras</h3>
+                            
+                            <div class="module__detail">
+                                <h4 class="module__detail-title">O que tem dentro</h4>
+                                <div class="module__groups">
+                                <div class="group"><ul><li>Integra com Estoque (solicitação de compra)</li></ul></div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <div class="mcat__compact" data-reveal-stagger>
+                    <article class="module module--compact" id="almoxarifado" aria-labelledby="m-almoxarifado">
+                        <h3 class="module__name" id="m-almoxarifado">Almoxarifado</h3>
+                        <p>Fale com a gente e veja este módulo em uma apresentação online.</p>
+                        <a class="btn btn--outline" href="https://api.whatsapp.com/send?phone=5534999651455&amp;text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20SIS-H." target="_blank" rel="noopener">Agendar apresentação online</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="mcat" id="cat-d" data-cat="d" aria-labelledby="cat-d-title">
+            <div class="container">
+                <div class="mcat__head" data-reveal>
+                    <span class="glyph" aria-hidden="true"><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-chart"/></svg></span>
+                    <h2 class="mcat__title display" id="cat-d-title">Gestão</h2>
+                </div>
+                <div class="mcat__compact" data-reveal-stagger>
+                    <article class="module module--compact" id="ordem-servico" aria-labelledby="m-ordem-servico">
+                        <h3 class="module__name" id="m-ordem-servico">Ordem de Serviço</h3>
+                        <p>Fale com a gente e veja este módulo em uma apresentação online.</p>
+                        <a class="btn btn--outline" href="https://api.whatsapp.com/send?phone=5534999651455&amp;text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20SIS-H." target="_blank" rel="noopener">Agendar apresentação online</a>
+                    </article>
+                    <article class="module module--compact" id="patrimonio" aria-labelledby="m-patrimonio">
+                        <h3 class="module__name" id="m-patrimonio">Patrimônio</h3>
+                        <p>Fale com a gente e veja este módulo em uma apresentação online.</p>
+                        <a class="btn btn--outline" href="https://api.whatsapp.com/send?phone=5534999651455&amp;text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20SIS-H." target="_blank" rel="noopener">Agendar apresentação online</a>
+                    </article>
+                </div>
+            </div>
+        </section>
+        </div>
+
+        <!-- CENA 8 · FECHAMENTO -->
+        <section class="cta on-dark" id="agendar" aria-labelledby="cta-title">
+            <div class="container cta__inner" data-reveal-stagger>
+                <h2 class="cta__title display" id="cta-title">O SIS-H contém muito mais rotinas para auxiliar na gestão hospitalar, da admissão do paciente até a alta.</h2>
+                <p class="cta__lead">Agende uma apresentação online.</p>
+                <a class="btn btn--light" href="https://api.whatsapp.com/send?phone=5534999651455&amp;text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20SIS-H." target="_blank" rel="noopener">Agendar apresentação online <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-whatsapp"/></svg></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- CENA 9 · RODAPÉ -->
+    <footer class="site-footer" id="footer">
+        <div class="container site-footer__inner">
+            <div class="site-footer__company">
+                <a class="brand" href="index.html"><img class="brand__logo" src="assets/sish/img/logo-sish-240.webp" srcset="assets/sish/img/logo-sish-240.webp 240w, assets/sish/img/logo-sish-480.webp 480w" sizes="122px" width="240" height="122" alt="SIS-H Logo" loading="lazy"></a>
+                <p class="site-footer__legal">SISH – Soluções Integradas em Software Hospitalar LTDA<br>CNPJ 13.432.652/0001-47</p>
+            </div>
+            <address class="site-footer__contact">
+                <ul>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-pin"/></svg><span>Avenida 17, nº 1640, Centro – Ituiutaba/MG</span></li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-phone"/></svg><span>Fone <a href="tel:+553432613762">(34) 3261-3762</a></span></li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-whatsapp"/></svg><span>WhatsApp <a href="https://api.whatsapp.com/send?phone=5534999651455&amp;text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20SIS-H." target="_blank" rel="noopener">(34) 9 9965-1455</a></span></li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-mail"/></svg><a href="mailto:sish@sish.com.br">sish@sish.com.br</a></li>
+                </ul>
+            </address>
+            <nav class="site-footer__nav" aria-label="Rodapé">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="modulos.html">Módulos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="site-footer__bottom">
+                <p>&copy; 2026 SIS-H. Todos os direitos reservados.</p>
+                <ul class="social" aria-label="Redes sociais">
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-facebook"/></svg><span class="sr-only">Facebook</span></li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-instagram"/></svg><span class="sr-only">Instagram</span></li>
+                    <li><svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-youtube"/></svg><span class="sr-only">YouTube</span></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÃO WHATSAPP FLUTUANTE -->
+    <a class="wa-float" target="_blank" rel="noopener" href="https://api.whatsapp.com/send?phone=5534999651455&amp;text=Ol%C3%A1%2C%20gostaria%20de%20agendar%20uma%20apresenta%C3%A7%C3%A3o%20do%20SIS-H.">
+        <svg class="icon" aria-hidden="true" focusable="false"><use href="assets/sish/icons/sprite.svg#i-whatsapp"/></svg>
+        <span class="sr-only">Atendimento via WhatsApp</span>
+    </a>
+
+    <script src="assets/sish/js/site.js?v=1" defer></script>
+</body>
+</html>
